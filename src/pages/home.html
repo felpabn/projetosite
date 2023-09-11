@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Site 02/09/2023</title>
+
+    <!--Javascript-->
+    <script defer src="../script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="stylesheet" href="../style/reset.css"/>
+    <link rel="stylesheet" href="../style/variables.css"/>
+    <link rel="stylesheet" href="../style/components/header.css"/>
+    <link rel="stylesheet" href="../style/components/hamburguer.css"/>
+    <link rel="stylesheet" href="../style/animations.css"/>
+</head>
+
+<body>
+    <header>
+        <span>
+            <a href="./home.html">
+                <i class="header-icon fa-solid fa-house"></i>
+            </a>
+            <h1 class="header-title">branding!</h1>
+        </span>
+        <div class="search-container">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Procure aqui..." type="text">
+        </div>
+
+        <div class="hamburguer">
+
+            <div class="lines"lines>
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+
+            <ul class="hamburguer-content">
+                <li class="--active">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./services.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contato</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="800" height="400" src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img width="800" height="400" src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img width="800" height="400" src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="cards-wrapper">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">branding.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, laudantium!</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">branding.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, atque?</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.estudioroxo.com.br/wp-content/uploads/Captura-de-tela-2022-09-28-093055.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">branding.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, autem?</p>
+                    <a href="#" class="btn btn-primary">Clique aqui</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> 
+            <div class="title-container">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam suscipit facilis molestias voluptatibus maxime, reprehenderit eius debitis dolores amet facere a eum, modi perspiciatis molestiae, optio hic rem enim.</h2>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deserunt culpa non vero ipsam ad eveniet maxime natus mollitia sint voluptatibus officiis blanditiis qui repellat explicabo voluptas animi facere praesentium, aspernatur dolorem! Eos, possimus maxime optio aut perferendis officiis voluptatibus ullam magni, dicta unde rem recusandae obcaecati quisquam aliquid veniam?
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ratione nostrum molestiae dolor iusto ipsum magnam, vitae accusantium ab? Dicta perspiciatis in quod neque! Placeat, deleniti laborum dolore dolor quisquam obcaecati sed. Doloremque, cum saepe.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, atque!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus beatae consectetur, doloremque doloribus neque perferendis! Deleniti quae praesentium corrupti sint dolores atque, voluptatum mollitia, alias minus fugit, libero tempore! <code></code> Lorem ipsum dolor sit amet.
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>email@email.com</p>
+        <p>(55) 996096108</p>
+        <p>Rua 123 do bairro 123, Cidade do site, Brasil</p>
+    </footer>
+</body>
+</html>

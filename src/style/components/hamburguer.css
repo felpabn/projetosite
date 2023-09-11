@@ -1,0 +1,77 @@
+.hamburguer {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.hamburguer .lines div {
+    transition: 300ms;
+}
+
+.hamburguer.--active .line-3 {
+    opacity: 0;
+}
+
+.hamburguer.--active .line-1 {
+    rotate: 45deg;
+    translate: 0 8px;
+}
+
+.hamburguer.--active .line-2 {
+    rotate: -45deg;
+}
+
+.hamburguer .lines {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 29px;
+    height: 25px;
+}
+
+.hamburguer .lines div {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+}
+
+.hamburguer .hamburguer-content {
+    display: none;
+}
+
+.hamburguer-content li a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+.hamburguer-content li:hover {
+    transition: 200ms;
+    font-weight: 600;
+}
+
+.hamburguer-content li.--active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.hamburguer.--active .hamburguer-content {
+    display: block;
+    width: 140px;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    animation: fade-in 350ms;
+    list-style: none;
+    padding: 12px 25px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 170px;
+    margin-left: -140px;
+    color: var(--text-primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+}
